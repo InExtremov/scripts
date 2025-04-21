@@ -39,6 +39,7 @@ mv "$user_dir/deleteScript.js" "$user_dir/$rep-delete.js"
 # 3. Обновляем скрипты
 cd $user_dir
 npm install axios js-base64 fs path
+npm install -g npm@11.3.0
 find . -type f -exec sed -i "s=user_name=$username=g" {} + 
 find . -type f -exec sed -i "s=rep_name=$rep=g" {} + 
 find . -type f -exec sed -i "s=folder_name=$folder=g" {} + 
