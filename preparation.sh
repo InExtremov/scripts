@@ -51,3 +51,4 @@ sudo crontab -l | { cat; echo "$cron_entry"; } | sudo crontab -
 cron_entry="0 23 26 2,4,6,8,10,12 * source .profile && cd $user_dir && $(which node) $rep-delete.js"
 sudo crontab -l | { cat; echo "$cron_entry"; } | sudo crontab -
 echo "Готово, можно проверять"
+crontab -e
